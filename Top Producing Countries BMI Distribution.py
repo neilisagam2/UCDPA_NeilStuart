@@ -22,4 +22,4 @@ ax.set_title(label = 'Distribution of BMI in Countries Producing Most Players', 
 plt.xticks(rotation = 45)
 plt.show()
 
-df.iloc[df.groupby(df['nationality'])['bmi'].idxmax()][['long_name', 'nationality', 'bmi']].style.background_gradient('Blues')
+df.iloc[df.groupby(df['nationality'])['bmi'].idxmax()][['long_name', 'nationality', 'bmi']]

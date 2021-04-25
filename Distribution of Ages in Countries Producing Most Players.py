@@ -15,4 +15,4 @@ ax.set_title(label = 'Distribution of Ages in Countries Producing Most Players',
 plt.xticks(rotation = 45)
 plt.show()
 
-df.iloc[df.groupby(df['nationality'])['age'].idxmax()][['long_name', 'nationality','age']].style.background_gradient('Blues')
+df.iloc[df.groupby(df['nationality'])['age'].idxmax()][['long_name', 'nationality','age']]

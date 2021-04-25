@@ -15,4 +15,4 @@ ax.set_title(label = 'Distribution of Height in Countries Producing Most Players
 plt.xticks(rotation = 45)
 plt.show()
 
-df.iloc[df.groupby(df['nationality'])['height_cm'].idxmax()][['long_name', 'nationality', 'height_cm']].style.background_gradient('Blues')
+df.iloc[df.groupby(df['nationality'])['height_cm'].idxmax()][['long_name', 'nationality', 'height_cm']
