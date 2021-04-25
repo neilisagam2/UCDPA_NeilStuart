@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv(r'C:\Users\neili\OneDrive\Desktop\Data Analytics\Fifa20.csv',delimiter=',',sep=r', ')
 
+df['nationality'].value_counts().head(5)
+
 nations = ['England', 'Argentina', 'Germany' ,'Spain', 'France']
 
 df_nations = df.loc[df['nationality'].isin(nations) & df['age']]

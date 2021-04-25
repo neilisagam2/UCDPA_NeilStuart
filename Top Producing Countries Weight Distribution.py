@@ -18,3 +18,5 @@ ax.set_xlabel(xlabel = 'Countries', fontsize = 15)
 ax.set_title(label = 'Distribution of Weight in Countries Producing Most Players', fontsize = 20)
 plt.xticks(rotation = 45)
 plt.show()
+
+df.iloc[df.groupby(df['nationality'])['weight_kg'].idxmax()][['long_name', 'nationality', 'weight_kg']].style.background_gradient('Blues')
