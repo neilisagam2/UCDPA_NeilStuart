@@ -9,3 +9,4 @@ plt.title('Overall Rating vs Value in Euros',fontsize = 20)
 plt.xlabel('Overall Rating',fontsize = 10)
 plt.ylabel('Value in Euros',fontsize = 10)
 plt.show()
+
